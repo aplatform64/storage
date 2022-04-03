@@ -24,7 +24,7 @@ stg_repository_os_family: "
   -%}
     {{ 'Ubuntu' }}
   {%- else -%}
-    {{ 'Linux' }}
+    {{ 'NotSupported' }}
   {%- endif -%}
   "
 

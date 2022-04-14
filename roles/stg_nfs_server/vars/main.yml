@@ -2,6 +2,8 @@
 # Define supported platforms
 stg_nfs_server_platforms:
   - "CentOS8"
+  - "RedHat8"
+  - "AlmaLinux8"
   - "OracleLinux8"
   - "Fedora33"
   - "Fedora35"
@@ -10,6 +12,8 @@ stg_nfs_server_platforms:
 stg_nfs_server_os_family: "
   {%- if
       ( ansible_distribution == 'CentOS' ) or
+      ( ansible_distribution == 'RedHat' ) or
+      ( ansible_distribution == 'AlmaLinux' ) or
       ( ansible_distribution == 'OracleLinux' ) or
       ( ansible_distribution == 'Fedora' )
   -%}

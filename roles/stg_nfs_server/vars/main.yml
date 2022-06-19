@@ -8,6 +8,7 @@ stg_nfs_server_platforms:
   - "OracleLinux8"
   - "Fedora33"
   - "Fedora35"
+  - "Fedora36"
 
 # Group Linux Distributions by family
 stg_nfs_server_os_family: "

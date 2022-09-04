@@ -32,4 +32,11 @@
       prepare: true
   ansible.builtin.include_role:
     name: "serdigital64.system.sys_package"
+
+- name: "Storage / AutoFS / Prerequisite / Install NFS client"
+  vars:
+    stg_nfs_client:
+      deploy: true
+  ansible.builtin.include_role:
+    name: "serdigital64.storage.stg_nfs_client"
 ...

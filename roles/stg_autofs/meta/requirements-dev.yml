@@ -5,4 +5,6 @@ collections:
     type: "file"
   - name: "../../../../../build/dev/serdigital64-system.tar.gz"
     type: "file"
+  - name: "../../../../../build/dev/serdigital64-storage.tar.gz"
+    type: "file"
 ...

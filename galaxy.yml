@@ -1,13 +1,13 @@
 ---
 namespace: "serdigital64"
 name: "storage"
-version: "1.5.1"
+version: "2.0.0"
 readme: "README.md"
 authors:
   - "SerDigital64 <https://github.com/serdigital64>"
 description: "Ansible Roles for automating storage management"
 license:
-  - "GPL-3.0-or-later"
+  - "Apache-2.0"
 tags:
   - "storage"
 dependencies:

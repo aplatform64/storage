@@ -17,7 +17,7 @@ stg_autofs_platforms:
   - "Debian11"
 
 # Group Linux Distributions by family
-stg_autofs_os_family: |
+stg_autofs_os_family: >-
   {%- if
       ( ansible_distribution == 'CentOS' ) or
       ( ansible_distribution == 'RedHat' ) or

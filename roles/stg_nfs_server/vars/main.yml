@@ -12,7 +12,7 @@ stg_nfs_server_platforms:
   - "Fedora36"
 
 # Group Linux Distributions by family
-stg_nfs_server_os_family: |
+stg_nfs_server_os_family: >-
   {%- if
         ( ansible_distribution == 'CentOS' ) or
         ( ansible_distribution == 'RedHat' ) or

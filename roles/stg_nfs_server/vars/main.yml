@@ -6,12 +6,13 @@ stg_nfs_server_platforms:
   - "AlmaLinux8"
   - "Rocky8"
   - "OracleLinux8"
+  - "OracleLinux9"
   - "Fedora33"
   - "Fedora35"
   - "Fedora36"
 
 # Group Linux Distributions by family
-stg_nfs_server_os_family: "
+stg_nfs_server_os_family: |
   {%- if
         ( ansible_distribution == 'CentOS' ) or
         ( ansible_distribution == 'RedHat' ) or
@@ -29,7 +30,6 @@ stg_nfs_server_os_family: "
   {%- else -%}
     {{ 'NotSupported' }}
   {%- endif -%}
-  "
 
 # Multiplatform packages
 stg_nfs_server_profiles_common:
